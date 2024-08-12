@@ -1,0 +1,45 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento, informando ao navegador que este é um documento HTML5 -->
+<html lang="pt-br"> <!-- Elemento raiz do documento HTML, com o atributo lang especificando que o idioma do conteúdo é português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para o documento como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização para garantir que a página seja renderizada corretamente em dispositivos móveis -->
+    <title>DORAMAS DAY</title> <!-- Define o título da página, que aparecerá na aba do navegador -->
+    <link rel="stylesheet" href="willy.css"> <!-- Link para uma folha de estilos CSS externa chamada willy.css -->
+</head>
+<body>
+    <div class="container"> <!-- Divisão principal que encapsula todo o conteúdo da página -->
+        <header>
+            <h1>WEB PAGE INTERATIVA DORAMAS DAY</h1> <!-- Cabeçalho da página, com um título de nível 1 -->
+        </header>
+        <section class="photo"> <!-- Seção da página que contém uma imagem -->
+            <img src="dorameira.jpg" alt="Foto de Doramas" width="900" height="900"> <!-- Exibe uma imagem com dimensões especificadas e um texto alternativo -->
+        </section>
+        <section class="music"> <!-- Seção dedicada à música, com um título -->
+            <h2>Ouça agora as melhores Ost's</h2> <!-- Título de nível 2 para a seção de música -->
+            <audio controls> <!-- Inclui controles para reproduzir o áudio -->
+                <source src="melhores ost.m4a" type="audio/mpeg"> <!-- Fonte do arquivo de áudio -->
+                Seu navegador não suporta o elemento de áudio. <!-- Mensagem exibida se o navegador não suportar o elemento de áudio -->
+            </audio>
+        </section>
+        <section class="list"> <!-- Seção que contém uma lista ordenada dos top 5 doramas -->
+            <h2>Top 5 Doramas</h2> <!-- Título de nível 2 para a seção de lista -->
+            <ol>
+                <li>Dorama 1º Descendants of the Sun (Descendentes do Sol) - 2016</li> <!-- Primeiro item da lista -->
+                <li>Dorama 2º Boys over Flowers (Rapazes Antes de Flores) - 2009</li> <!-- Segundo item da lista -->
+                <li>Dorama 3º Pousando No Amor - 2019</li> <!-- Terceiro item da lista -->
+                <li>Dorama 4º What's Wrong with Secretary Kim? - 2018</li> <!-- Quarto item da lista -->
+                <li>Dorama 5º Itaewon Class - 2020</li> <!-- Quinto item da lista -->
+            </ol>
+            <button id="changeFontButton">Mudar Fonte</button> <!-- Botão que provavelmente muda a fonte da lista ao ser clicado -->
+        </section>
+        <section class="interactions"> <!-- Seção para interações adicionais -->
+            <button id="magicButton">Mudar Cor</button> <!-- Botão que muda a cor da página ao ser clicado -->
+            <button id="heartButton">Corações</button> <!-- Botão que exibe corações ao ser clicado -->
+            <div id="hearts" class="hearts"></div> <!-- Div onde os corações serão exibidos -->
+            <h2>Esse será o seu estado após assistir a um dorama.</h2> <!-- Título de nível 2 descrevendo o estado após assistir a um dorama -->
+            <img src="gifdore.gif" alt="gif de Doramas" width="900" height="900"> <!-- Exibe uma imagem gif com dimensões especificadas e um texto alternativo -->
+        </section>
+    </div>
+    <script src="controller.Js"></script> <!-- Link para um arquivo JavaScript externo chamado controller.js que deve conter a lógica para os botões e interações da página -->
+</body>
+</html>

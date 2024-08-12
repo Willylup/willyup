@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte principal do documento como Arial ou uma fonte sem serifa */
+    background-color: #f0f0f0; /* Define a cor de fundo do corpo da página como um cinza claro */
+    color: #333; /* Define a cor do texto como um cinza escuro */
+    margin: 0; /* Remove a margem padrão do corpo da página */
+    padding: 0; /* Remove o padding padrão do corpo da página */
+    text-align: center; /* Centraliza o texto no corpo da página */
+}
+
+.container {
+    padding: 20px; /* Adiciona um padding de 20 pixels ao redor do conteúdo da div container */
+}
+
+header {
+    background-color: #ffcccb; /* Define a cor de fundo do cabeçalho como rosa claro */
+    padding: 20px; /* Adiciona um padding de 20 pixels ao redor do conteúdo do cabeçalho */
+    margin-bottom: 20px; /* Adiciona uma margem inferior de 20 pixels ao cabeçalho */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao cabeçalho com raio de 10 pixels */
+}
+
+header h1 {
+    font-size: 2.5em; /* Define o tamanho da fonte do título h1 no cabeçalho como 2.5em */
+    color: #333; /* Define a cor do texto do título como um cinza escuro */
+}
+
+section {
+    margin: 20px 0; /* Adiciona uma margem superior e inferior de 20 pixels às seções */
+    padding: 20px; /* Adiciona um padding de 20 pixels ao redor do conteúdo das seções */
+    border-radius: 10px; /* Adiciona bordas arredondadas às seções com raio de 10 pixels */
+}
+
+.photo {
+    background-color: #ffc1e3; /* Define a cor de fundo da seção de fotos como um rosa suave */
+}
+
+.photo h2 {
+    font-size: 2em; /* Define o tamanho da fonte do título h2 na seção de fotos como 2em */
+    color: #333; /* Define a cor do texto do título como um cinza escuro */
+}
+
+.photo img {
+    max-width: 100%; /* Define a largura máxima da imagem como 100% do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Adiciona bordas arredondadas à imagem com raio de 10 pixels */
+    margin-bottom: 20px; /* Adiciona uma margem inferior de 20 pixels à imagem */
+}
+
+.music {
+    background-color: #ffebcd; /* Define a cor de fundo da seção de música como um bege claro */
+}
+
+.music h2 {
+    font-size: 2em; /* Define o tamanho da fonte do título h2 na seção de música como 2em */
+    color: #333; /* Define a cor do texto do título como um cinza escuro */
+}
+
+.list {
+    background-color: #e0ffff; /* Define a cor de fundo da seção de lista como um azul claro */
+}
+
+.list h2 {
+    font-size: 2em; /* Define o tamanho da fonte do título h2 na seção de lista como 2em */
+    color: #333; /* Define a cor do texto do título como um cinza escuro */
+}
+
+ol {
+    list-style-position: inside; /* Define a posição dos itens da lista ordenada dentro do contêiner */
+    font-size: 1.2em; /* Define o tamanho da fonte dos itens da lista como 1.2em */
+    color: #555; /* Define a cor do texto dos itens da lista como um cinza médio */
+}
+
+button {
+    padding: 15px 30px; /* Define o padding do botão como 15 pixels verticalmente e 30 pixels horizontalmente */
+    font-size: 1.2em; /* Define o tamanho da fonte do botão como 1.2em */
+    color: white; /* Define a cor do texto do botão como branco */
+    background-color: #007BFF; /* Define a cor de fundo do botão como azul */
+    border: none; /* Remove qualquer borda do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão com raio de 5 pixels */
+    cursor: pointer; /* Muda o cursor para o ponteiro ao passar sobre o botão */
+    margin: 10px; /* Adiciona uma margem de 10 pixels ao redor do botão */
+    transition: background-color 0.3s, transform 0.3s; /* Adiciona uma transição suave de 0.3 segundos para a cor de fundo e a transformação */
+}
+
+button:hover {
+    background-color: #0056b3; /* Muda a cor de fundo do botão ao passar o mouse para um azul mais escuro */
+    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% ao passar o mouse */
+}
+
+.interactions {
+    background-color: #d8bfd8; /* Define a cor de fundo da seção de interações como um lilás */
+}
+
+.interactions h2 {
+    font-size: 2em; /* Define o tamanho da fonte do título h2 na seção de interações como 2em */
+    color: #333; /* Define a cor do texto do título como um cinza escuro */
+}
+
+.hearts {
+    position: relative; /* Define o posicionamento relativo para a div de corações */
+    height: 100px; /* Define a altura da div de corações como 100 pixels */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites da div */
+}
+
+.heart {
+    position: absolute; /* Define o posicionamento absoluto para os corações */
+    font-size: 2em; /* Define o tamanho da fonte dos corações como 2em */
+    color: red; /* Define a cor dos corações como vermelho */
+    animation: heart-float 5s ease-in-out; /* Aplica uma animação chamada heart-float com duração de 5 segundos e uma transição suave */
+}
+
+@keyframes heart-float {
+    0% {
+        transform: translateY(0); /* No início da animação, os corações estão na posição original */
+    }
+    100% {
+        transform: translateY(-300px); /* No final da animação, os corações se movem 300 pixels para cima */
+    }
+}
